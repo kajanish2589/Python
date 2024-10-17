@@ -3,9 +3,9 @@ from py3270 import Emulator
 from function import *
 
 
-user_id = "CNOALN"
-pwd_temp = "123LOVE"
-session_id = 'TLIFE'
+user_id = "userid"
+pwd_temp = "pwd"
+session_id = 'region'
 
 
 #==================================================================================================================================
@@ -25,7 +25,7 @@ record = excel_data_load(excelf)
 
 #===============================================================================================
 em = Emulator(visible=False, args=["-trace","-tracefile","run.log"]) #call emulator method
-em.connect('mf.conseco.com:23') #connect to host
+em.connect('ip or domain name:23') #connect to host
 
 em.exec_command(b"Wait(Output)")
 
